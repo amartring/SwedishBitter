@@ -31,9 +31,9 @@ gulp.task("clean", function() {
   return del("build");
 });
 
-gulp.task("clean-svg", function() {
-  return del("src/img/icons/sprite.svg");
-});
+// gulp.task("clean-svg", function() {
+//   return del("src/img/icons/sprite.svg");
+// });
 
 gulp.task("copy", function() {
   return gulp.src([
@@ -149,20 +149,20 @@ gulp.task('svg-sprite', function() {
       inlineSvg: true
     }))
     .pipe(rename('sprite.svg'))
-    .pipe(gulp.dest('src/img/icons'))
+    // .pipe(gulp.dest('src/img/icons'))
     .pipe(gulp.dest('build/img/icons'))
 });
 
 gulp.task("build", function() {
   run(
     "clean",
-    "clean-svg",
+    // "clean-svg",
     "svg-sprite",
     "html",
     "copy",
     "style",
     "js:include",
     "js:minify",
-    /*"images"*/
+    "images"
   );
 });

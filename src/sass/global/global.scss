@@ -1,0 +1,38 @@
+:root {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  text-size-adjust: none;
+  touch-action: manipulation;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  outline: none;
+}
+
+body {
+  margin: 0;
+  font-family: $font-family;
+  font-weight: $font-weight;
+  min-width: $mobile-width;
+  background-color: $color-blue;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  // убирает подсветку элементов при тапе на iOS
+  -webkit-tap-highlight-color: transparent;
+}
+
+main {
+  display: block;
+}
+
+.page-body--page-list {
+  background: none;
+}

@@ -1,0 +1,40 @@
+@mixin font-face($name, $filename, $weight: null, $style: null, $exts: woff2 woff) {
+  $src: null;
+
+  @each $ext in $exts {
+    $src: append($src, url(quote("../fonts/" + $filename + "." + $ext)) format(quote($ext)), comma);
+  }
+
+  @font-face {
+    font-family: quote($name);
+    font-style: $style;
+    font-weight: $weight;
+    src: $src;
+  }
+}
+
+@mixin no-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin no-indent {
+  margin: 0;
+  padding: 0;
+}
+
+@function get-vw-1720($target) {
+  $vw-context: (1720*.01) * 1px;
+  @return ($target/$vw-context) * 1vw;
+}
+
+@function get-vw-768($target) {
+  $vw-context: (7680*.01) * 1px;
+  @return ($target/$vw-context) * 1vw;
+}
+
+@function get-vw-320($target) {
+  $vw-context: (320*.01) * 1px;
+  @return ($target/$vw-context) * 1vw;
+}
