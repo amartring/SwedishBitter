@@ -14,8 +14,8 @@ var del = require("del");
 var copy = require("gulp-copy");
 var imagemin = require("gulp-imagemin");
 var objectFit = require("postcss-object-fit-images")
-var svgstore = require("gulp-svgstore");
-var svgmin = require("gulp-svgmin");
+// var svgstore = require("gulp-svgstore");
+// var svgmin = require("gulp-svgmin");
 var run = require("run-sequence");
 var server = require("browser-sync").create();
 var newer = require('gulp-newer');
@@ -86,7 +86,7 @@ function reload (done) {
   done();
 }
 
-gulp.task("html:update", ["html", "svg-sprite"], reload);
+gulp.task("html:update", ["html"], reload);
 gulp.task("js:update", ["js:copy", "js:include"], reload);
 gulp.task("images:update", ["images:copy"], reload);
 
@@ -136,28 +136,28 @@ gulp.task("serve", ["style"], function() {
   gulp.watch("src/data/**/*.js", ["html:update"]);
 });
 
-gulp.task('svg-sprite', function() {
-  return gulp.src('src/img/icons/*.svg')
-    .pipe(cheerio({
-      run ($) {
-        $('[fill]').removeAttr('fill');
-        $('[stroke]').removeAttr('stroke');
-      },
-      parserOptions: {xmlMode: true}
-    }))
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
-    .pipe(rename('sprite.svg'))
+// gulp.task('svg-sprite', function() {
+//   return gulp.src('src/img/icons/*.svg')
+//     .pipe(cheerio({
+//       run ($) {
+//         $('[fill]').removeAttr('fill');
+//         $('[stroke]').removeAttr('stroke');
+//       },
+//       parserOptions: {xmlMode: true}
+//     }))
+//     .pipe(svgstore({
+//       inlineSvg: true
+//     }))
+//     .pipe(rename('sprite.svg'))
     // .pipe(gulp.dest('src/img/icons'))
-    .pipe(gulp.dest('build/img/icons'))
-});
+//     .pipe(gulp.dest('build/img/icons'))
+// });
 
 gulp.task("build", function() {
   run(
     "clean",
     // "clean-svg",
-    "svg-sprite",
+    // "svg-sprite",
     "html",
     "copy",
     "style",

@@ -1,0 +1,103 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: get-vw-1720(15px);
+  padding-bottom: get-vw-1720(15px);
+  padding-left: get-vw-1720(275px);
+  padding-right: get-vw-1720(275px);
+  color: $color-gray;
+
+  @media (max-width: $tablet-width) {
+    padding-top: get-vw-768(15px);
+    padding-bottom: get-vw-768(15px);
+    padding-left: get-vw-768(22px);
+    padding-right: get-vw-768(22px);
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: get-vw-320(15px);
+    padding-bottom: get-vw-320(15px);
+    padding-left: get-vw-320(22px);
+    padding-right: get-vw-320(22px);
+  }
+}
+
+.header__logo {
+  margin-right: get-vw-1720(30px);
+  width: get-vw-1720(198px);
+  height: get-vw-1720(29px);
+
+  img {
+    width: get-vw-1720(198px);
+    height: get-vw-1720(29px);
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-right: get-vw-768(30px);
+    width: get-vw-768(198px);
+    height: get-vw-768(29px);
+
+    img {
+      width: get-vw-768(198px);
+      height: get-vw-768(29px);
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-right: 0;
+    width: get-vw-320(110px);
+    height: get-vw-320(16px);
+
+    img {
+      width: get-vw-320(110px);
+      height: get-vw-320(16px);
+    }
+  }
+}
+
+.header__delivery {
+  font-size: get-vw-1720(16px);
+
+  @media (max-width: $tablet-width) {
+    font-size: get-vw-768(16px);
+  }
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.header__phone {
+  margin-left: auto;
+  font-size: get-vw-1720(20px);
+  line-height: 1.5;
+  font-weight: 700;
+  text-align: right;
+  color: $color-text;
+
+  span {
+    display: block;
+    font-size: get-vw-1720(12px);
+    font-weight: 400;
+    color: $color-gray;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: get-vw-768(20px);
+
+    span {
+      font-size: get-vw-768(12px);
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: get-vw-320(14px);
+
+    span {
+      display: none;
+    }
+  }
+}

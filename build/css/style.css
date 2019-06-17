@@ -355,3 +355,87 @@ main {
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
           clip-path: inset(100%); }
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-top: 0.87209vw;
+  padding-bottom: 0.87209vw;
+  padding-left: 15.98837vw;
+  padding-right: 15.98837vw;
+  color: #9a9a9a; }
+
+.header__logo {
+  margin-right: 1.74419vw;
+  width: 11.51163vw;
+  height: 1.68605vw; }
+  .header__logo img {
+    width: 11.51163vw;
+    height: 1.68605vw; }
+
+.header__delivery {
+  font-size: 0.93023vw; }
+
+.header__phone {
+  margin-left: auto;
+  font-size: 1.16279vw;
+  line-height: 1.5;
+  font-weight: 700;
+  text-align: right;
+  color: #303030; }
+  .header__phone span {
+    display: block;
+    font-size: 0.69767vw;
+    font-weight: 400;
+    color: #9a9a9a; }
+  @media (max-width: 768px) {
+    .header {
+      padding-top: 1.95313vw;
+      padding-bottom: 1.95313vw;
+      padding-left: 2.86458vw;
+      padding-right: 2.86458vw; }
+    .header__logo {
+      margin-right: 3.90625vw;
+      width: 25.78125vw;
+      height: 3.77604vw; }
+      .header__logo img {
+        width: 25.78125vw;
+        height: 3.77604vw; }
+    .header__delivery {
+      font-size: 2.08333vw; }
+    .header__phone {
+      font-size: 2.60417vw; }
+      .header__phone span {
+        font-size: 1.5625vw; } }
+  @media (max-width: 320px) {
+    .header {
+      padding-top: 4.6875vw;
+      padding-bottom: 4.6875vw;
+      padding-left: 6.875vw;
+      padding-right: 6.875vw; }
+    .header__logo {
+      margin-right: 0;
+      width: 34.375vw;
+      height: 5vw; }
+      .header__logo img {
+        width: 34.375vw;
+        height: 5vw; }
+    .header__delivery {
+      display: none; }
+    .header__phone {
+      font-size: 4.375vw; }
+      .header__phone span {
+        display: none; } }

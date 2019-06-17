@@ -30,7 +30,7 @@
 }
 
 @function get-vw-768($target) {
-  $vw-context: (7680*.01) * 1px;
+  $vw-context: (768*.01) * 1px;
   @return ($target/$vw-context) * 1vw;
 }
 
