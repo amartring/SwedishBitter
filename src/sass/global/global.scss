@@ -19,8 +19,9 @@ body {
   margin: 0;
   font-family: $font-family;
   font-weight: $font-weight;
-  min-width: $mobile-width;
-  background-color: $color-blue;
+  // min-width: $mobile-width;
+  color: $color-text;
+  background-color: $color-white;
   position: relative;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
