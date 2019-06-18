@@ -21,25 +21,26 @@ html(lang="ru")
         span Звонок бесплатный
 
     section.intro
-      .intro__image
-        img(src="img/package.png" srcset="img/package@2x.png 2x" alt="Упаковка Swedish Bitter")
+      .intro__wrapper
+        .intro__image
+          img(src="img/package.png" srcset="img/package@2x.png 2x" width="298" height="648" alt="Упаковка Swedish Bitter")
 
-      .intro__main
-        h1.intro__title Сбор трав
-          span Шведская горечь
-        p.intro__text Не имеет аналогов в мире по оздоровительной силе  и широте лечебгных свойств
+        .intro__main
+          h1.intro__title Сбор трав
+            span Шведская горечь
+          p.intro__text Не имеет аналогов в мире по оздоровительной силе  и широте лечебгных свойств
 
-      .intro__form.intro-form
-        form.intro-form
-          h2.intro-form__title Узнайте подробнее о бальзаме
-          ul.intro-form__list
-            li.intro-form__item
-              input.intro-form__input.intro-form__input--name(type="text" placeholder="Имя" id="intro-form-name")
-              label.visually-hidden(for="intro-form-name") Имя
-            li.intro-form__item
-              input.intro-form__input.intro-form__input--phone(type="tel" placeholder="Телефон" id="intro-form-phone")
-              label.visually-hidden(for="intro-form-phone") Телефон
-          button.btn.intro-form__btn(type="submit") Узнать
+        .intro__form
+          form.intro-form
+            h2.intro-form__title Узнайте подробнее о бальзаме
+            ul.intro-form__list
+              li.intro-form__item
+                input.intro-form__input.intro-form__input--name(type="text" placeholder="Имя" id="intro-form-name")
+                label.visually-hidden(for="intro-form-name") Имя
+              li.intro-form__item
+                input.intro-form__input.intro-form__input--phone(type="tel" placeholder="Телефон" id="intro-form-phone")
+                label.visually-hidden(for="intro-form-phone") Телефон
+            button.btn.intro-form__btn(type="submit") Узнать
 
     section.statistics
       h2.statistics__title.visually-hidden Статистика
@@ -85,9 +86,9 @@ html(lang="ru")
         li.reasons__item Эффект от применения можно увидеть сразу
 
       .reasons__info
-        picture
-          sorce(media="(max-width: 320px)" srcset="img/reasons-small.jpg 1x, img/reasons-small@2x.jpg 2x")
-          img.reasons__photo(src="img/reasons.jpg" srcset="img/reasons@2x.jpg 2x" alt="Причины популярности")
+        //- picture
+        //-   sorce(media="(max-width: 320px)" srcset="img/reasons-small.jpg 1x, img/reasons-small@2x.jpg 2x")
+        //-   img.reasons__photo(src="img/reasons.jpg" srcset="img/reasons@2x.jpg 2x" alt="Причины популярности")
         p.reasons__text Даже в странах с очень высоким уровнем медицины, таких как Германия и Австрия, бальзам Шведская Горечь продается в каждой аптеке!
         button.btn.reasons__btn(type="button") Получить средство-панацею к себе в аптечку
 
@@ -250,7 +251,7 @@ html(lang="ru")
         p.making__conclusion Настоя одной упаковки хватает на 4-5 месяцев
         button.btn.making__btn(type="button") Создать эликсир молодости и здоровья
 
-      img.making__photo(src="img/making.jpg" srcset="img/making@2x.jpg 2x" alt="Эликсир молодости и здоровья")
+      //- img.making__photo(src="img/making.jpg" srcset="img/making@2x.jpg 2x" alt="Эликсир молодости и здоровья")
 
     section.quality
       h2.title.quality__title Гарантия качества

@@ -1,0 +1,26 @@
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  font-size: get-vw-1720(14px);
+  line-height: 1.571;
+  letter-spacing: get-vw-768(0.7px);
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color-white;
+  background: none;
+  background-color: $color-green--button;
+  border: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  @media (max-width: $tablet-width) {
+    font-size: get-vw-768(14px);
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: get-vw-320(12px);
+    line-height: 1.833;
+  }
+}

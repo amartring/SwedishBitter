@@ -1,0 +1,111 @@
+.intro-form {
+  position: relative;
+  padding-top: get-vw-1720(40px);
+  padding-bottom: get-vw-1720(130px);
+  padding-left: get-vw-1720(50px);
+  padding-right: get-vw-1720(50px);
+  border: 1px solid $color-green--border;
+  background-color: $color-white;
+
+  @media (max-width: $tablet-width) {
+    padding-top: get-vw-768(40px);
+    padding-bottom: get-vw-768(122px);
+    padding-left: get-vw-768(50px);
+    padding-right: get-vw-768(50px);
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0;
+    border: none;
+  }
+}
+
+.intro-form__title {
+  @include no-indent;
+  margin-bottom: get-vw-1720(30px);
+  max-width: get-vw-1720(180px);
+  font-size: get-vw-1720(14px);
+  font-weight: 700;
+  line-height: 1.571;
+  text-transform: uppercase;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: get-vw-768(20px);
+    max-width: get-vw-768(180px);
+    font-size: get-vw-768(14px);
+  }
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.intro-form__list {
+  @include no-list;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.intro-form__item {
+  width: get-vw-1720(200px);
+
+  @media (max-width: $tablet-width) {
+    width: get-vw-768(200px);
+  }
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.intro-form__input {
+  font-size: get-vw-1720(14px);
+  line-height: 2.5;
+  color: $color-lime--text;
+  border: none;
+  border-bottom: 1px solid $color-green--border;
+  width: 100%;
+
+  @media (max-width: $tablet-width) {
+    font-size: get-vw-768(14px);
+  }
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+::-webkit-input-placeholder {color:$color-lime--text;}
+::-moz-placeholder          {color:$color-lime--text;}/* Firefox 19+ */
+:-moz-placeholder           {color:$color-lime--text;}/* Firefox 18- */
+:-ms-input-placeholder      {color:$color-lime--text;}
+
+.intro-form__btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-top: get-vw-1720(23px);
+  padding-bottom: get-vw-1720(23px);
+  padding-left: get-vw-1720(70px);
+  padding-right: get-vw-1720(110px);
+
+  @media (max-width: $tablet-width) {
+    padding-top: get-vw-768(15px);
+    padding-bottom: get-vw-768(15px);
+    padding-left: get-vw-768(70px);
+    padding-right: get-vw-768(110px);
+  }
+
+  @media (max-width: $mobile-width) {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    padding-top: get-vw-320(5px);
+    padding-bottom: get-vw-320(5px);
+    padding-left: get-vw-320(20px);
+    padding-right: get-vw-320(20px);
+    width: 100%;
+  }
+}
