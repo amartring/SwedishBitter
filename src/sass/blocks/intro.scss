@@ -1,14 +1,17 @@
 .intro {
+  margin-bottom: get-vw-1720(80px);
   background-image: url(../img/intro-bg-1720.jpg);
   background-repeat: no-repeat;
   background-size: get-vw-1720(1720px) auto;
 
   @media (max-width: $tablet-width) {
+    margin-bottom: get-vw-768(60px);
     background-image: url(../img/intro-bg-768.jpg);
     background-size: get-vw-768(768px) auto;
   }
 
   @media (max-width: $mobile-width) {
+    margin-bottom: get-vw-320(60px);
     background-image: url(../img/intro-bg-320.jpg);
     background-size: get-vw-320(320px) auto;
   }

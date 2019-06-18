@@ -491,6 +491,7 @@ main {
   padding-right: 6.39535vw; }
 
 .intro {
+  margin-bottom: 4.65116vw;
   background-image: url(../img/intro-bg-1720.jpg);
   background-repeat: no-repeat;
   background-size: 100vw auto; }
@@ -540,6 +541,75 @@ main {
   background-color: #ffffff;
   z-index: 2; }
 
+.statistics {
+  padding-left: 15.98837vw;
+  padding-right: 15.98837vw; }
+
+.statistics__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.statistics__item {
+  position: relative;
+  padding-top: 1.45349vw;
+  padding-left: 2.61628vw;
+  width: 14.30233vw; }
+  .statistics__item::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 1.51163vw;
+    height: 1.51163vw;
+    border: 0.2907vw solid #a4c58c;
+    border-radius: 50%;
+    opacity: 0.3;
+    content: ""; }
+
+.statistics__data {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1.16279vw;
+  font-size: 1.74419vw;
+  font-weight: 600;
+  line-height: 1.333;
+  color: #a8c48c; }
+  .statistics__data span {
+    font-size: 1.04651vw;
+    line-height: 1.333; }
+  .statistics__data::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 0.11628vw;
+    background-color: #a8c48c;
+    content: ""; }
+
+.statistics__text {
+  margin: 0;
+  padding: 0;
+  font-size: 0.93023vw;
+  line-height: 1.5;
+  color: #000000; }
+
 @media (max-width: 768px) {
     .btn {
       font-size: 1.82292vw; }
@@ -580,6 +650,7 @@ main {
       padding-left: 9.11458vw;
       padding-right: 14.32292vw; }
     .intro {
+      margin-bottom: 7.8125vw;
       background-image: url(../img/intro-bg-768.jpg);
       background-size: 100vw auto; }
     .intro__wrapper {
@@ -608,7 +679,28 @@ main {
       line-height: 1.5; }
     .intro__form {
       padding: 2.60417vw;
-      width: 74.21875vw; } }
+      width: 74.21875vw; }
+    .statistics {
+      padding-left: 12.36979vw;
+      padding-right: 12.36979vw; }
+    .statistics__item {
+      margin-bottom: 9.76563vw;
+      padding-top: 4.55729vw;
+      padding-left: 4.81771vw;
+      width: 32.55208vw; }
+      .statistics__item::before {
+        width: 3.38542vw;
+        height: 3.38542vw;
+        border: 0.65104vw solid #a4c58c; }
+    .statistics__data {
+      margin-bottom: 2.60417vw;
+      font-size: 3.90625vw; }
+      .statistics__data span {
+        font-size: 2.34375vw; }
+      .statistics__data::after {
+        height: 0.26042vw; }
+    .statistics__text {
+      font-size: 2.08333vw; } }
 
 @media (max-width: 320px) {
     .btn {
@@ -651,6 +743,7 @@ main {
       padding-right: 6.25vw;
       width: 100%; }
     .intro {
+      margin-bottom: 18.75vw;
       background-image: url(../img/intro-bg-320.jpg);
       background-size: 100vw auto; }
     .intro__wrapper {
@@ -701,4 +794,29 @@ main {
       width: 100%;
       -webkit-box-ordinal-group: 2;
           -ms-flex-order: 1;
-              order: 1; } }
+              order: 1; }
+    .statistics {
+      padding-left: 17.1875vw;
+      padding-right: 18.75vw; }
+    .statistics__list {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .statistics__item {
+      margin-bottom: 7.8125vw;
+      padding-top: 0;
+      padding-left: 0;
+      width: 100%; }
+      .statistics__item::before {
+        display: none; }
+    .statistics__data {
+      margin-bottom: 6.25vw;
+      font-size: 7.5vw;
+      line-height: 1.5; }
+      .statistics__data span {
+        font-size: 5vw; }
+      .statistics__data::after {
+        height: 0.625vw; }
+    .statistics__text {
+      font-size: 5vw; } }
