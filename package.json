@@ -32,7 +32,7 @@
     "gulp-uglify": "^3.0.1",
     "gulp-util": "^3.0.8",
     "postcss-object-fit-images": "^1.1.2",
-    "pug": "^2.0.3",
+    "pug": "^3.0.1",
     "require-glob": "^3.2.0",
     "run-sequence": "^2.2.0",
     "stylelint": "^9.5.0",
