@@ -64,7 +64,7 @@
     "natives": "^1.1.6",
     "sort-css-media-queries": "^1.4.3",
     "svg4everybody": "^2.1.7",
-    "swiper": "^4.4.2"
+    "swiper": "^6.5.1"
   },
   "eslintIgnore": [
     "gulpfile.js",
